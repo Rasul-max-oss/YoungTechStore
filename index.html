@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юный техник</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container-flex">
+      <div class="logo">
+          <span>Юный Техник</span>
+      </div>
+      <nav class="nav">
+          <a class="nav-item"  href="#">Товары</a>
+          <a class="nav-item"  href="#">Отзывы</a>
+          <a class="nav-item"  href="#">Помощь</a>
+          <a class="nav-item"  href="#">Контакты</a>
+      </nav>
+      <button class="nav-button">Посмотреть предложение</button>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-banner">
+      <img class="main-banner-item" src="img/image1.jpg" alt="">
+    </div>
+    
+    <section class="product">
+      <div class="product-text-info">
+        <h1>Лучшие товары от Юного Техника</h1>
+        <p>Широкий выбор современной техники</p>
+      </div>
+      <div class="product-container">
+          <div class="product-item">
+              <img src="img/product1.png">
+              <div class="product-text-item">
+                <h3>Смартфон XY-300</h3>
+                <p>Безграничные возможности в ваших руках</p>  
+              </div>
+              <div  class="product-item-price">
+                  <div class="new-price">
+                      18 990
+                  </div>
+                  <div class="last-price">
+                    23 990
+                  </div>
+              </div>
+              <button id="order-border">Заказать</button>
+          </div>
+          <div class="product-item">
+            <img src="img/product2.png">
+            <div class="product-text-item">
+              <h3>Планшет Atra Pro</h3>
+              <p>Настоящее мощное устройство для работы и развлечений</p>  
+            </div>
+            <div  class="product-item-price">
+                <div class="new-price">
+                    29 990
+                </div>
+                <div class="last-price">
+                    39 990
+                </div>
+            </div>
+            <button id="order-border">Заказать</button>
+        </div>
+        <div class="product-item" data="product1">
+              <img src="img/product3.png">
+              <div class="product-text-item">
+                <h3>Идеальный ноутбук</h3>
+                <p>Мощность и стиль в каждой детали</p>  
+              </div>
+              <div  class="product-item-price">
+                  <div class="new-price">
+                    98 990
+                  </div>
+                  <div class="last-price">
+                    73 990
+                  </div>
+              </div>
+              <button id="order-border" >Заказать</button>
+          </div>
+      </div>
+    </section>
+    <section class="reviews">
+        <h1>Отзывы покупателей</h1>
+        <div class="container">
+            <div class="button-next  slider-prev">
+                <img src="img/left-arrow.png" alt="arrow-prev" width="20" height="20">
+            </div>
+            <div class="slider">
+                <div class="slider-line">
+                    <div class="revies-person-container">
+                        <img class="person-image" src="img/person1.jpg" alt="" width="100" height="100">
+                        <p class="person-name">Александра Лаптева</p>
+                        <p class="person-specility">Секретарь</p>
+                        <p class="person-revies">“Я просто в восторге от своего нового телефона XY-300! Этот аппарат сочетает в себе стиль, функциональность и высокотехнологичные возможности, что делает его идеальным спутником.
+                          Дизайн телефона просто завораживает: тонкий и легкий корпус, изогнутый экран и стильная цветовая гамма – все это создает великолепный внешний вид. Аккумулятор держит заряд на протяжении всего дня, что особенно важно для активной девушки, всегда в движении.”</p>
+                      </div>
+                      <div class="revies-person-container">
+                        <img class="person-image" src="img/person1.jpg" alt="" width="100" height="100">
+                        <p class="person-name">Евгений Мельников</p>
+                        <p class="person-specility">Начальник Цеха</p>
+                        <p class="person-revies">“Приобрел в этом магазине уже третий телефон (iPhone). Просто позвонил- мне всё доставили в удобное время. Качество обслуживания и сопровождения клиентов в магазине на высоте. Цена на рынке нашего города лучшая. Рекомендую!”</p>
+                      </div>
+                </div>
+            </div>
+            <div class="button-next slider-next">
+                <img src="img/right-arrow.png" alt="arrow-next" width="20" height="20">
+            </div>
+        </div>
+        <div class="dvtiles">
+              <div class="dvtiles-item lineOne"></div>
+              <div class="dvtiles-item lineTwo"></div>
+        </div>
+    </section>
+    <section class="feedback">
+      <div class="product-text-info">
+        <h1>Остались вопросы?</h1>
+        <p>Мы готовы вам помочь</p>
+      </div>
+    </section>
+  </main>
+  <div class="cart-icon" id="cartIcon">
+    <span id="cartIconItem">🛒</span>
+  </div>
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Корзина</h2>
+      <div id="cartItems"></div>
+      <div class="containerFinalPrice">
+        <span id="finalPrice"></span>
+      </div>
+    </div>
+  </div>
+  <script src="slider-script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
